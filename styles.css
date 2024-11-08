@@ -1,0 +1,50 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    max-width: 800px;
+    overflow: hidden; /* Hide images outside the container */
+    border-radius: 10px;
+}
+
+/* Styling for the carousel */
+.carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Progress bar container */
+.progress-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* Actual progress bar */
+.progress-bar {
+    height: 100%;
+    width: 0%; /* Initial progress is 0% */
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: width 3s linear;
+}
